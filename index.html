@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>De$</title>
+</head>
+<body>
+  <header>
+    <h1>De$ifra</h1>
+  </header>
+  <div class="container">
+    <input type="text" placeholder="Digite aqui seu texto" id="txt"> <br>
+      <div class="buts">
+        <button id="decif" onclick="cesarToStr(prompt('Quantos números quer mover?'))">Decifrar</button> <button id="cif" onclick="strToCesar(prompt('Quantos números quer mover?'))">Cifrar</button>
+      </div>
+    <div id="code">
+      <h6 id="translate"></h6>
+    </div>
+  </div>
+<footer>
+  <button id="b64Decif" onclick="b64ToStr()">b64 - Decifrar</button>
+  <button id="b64Cif" onclick="strToB64()">b64 - Cifrar</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
